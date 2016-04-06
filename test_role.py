@@ -4,13 +4,13 @@ import unittest
 from app.models.roles_model import RolesModel
 
 
-
 class TestRolesModel(unittest.TestCase):
-
+    """start conditions for testing"""
     def setUp(self):
         self.roles = RolesModel()
 
     def test_initORM(self):
+    """Check, whether initORM is None"""
         self.assertIsNotNone(self.roles.initORM())
 
     def test_get_all_roles(self):
